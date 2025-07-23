@@ -1,0 +1,53 @@
+body { font-family: Arial, sans-serif; }
+    
+.product-card img { height: 180px; object-fit: cover; }
+
+.price-range input[type="range"] { width: 100%; }
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+    
+.navbar form input {
+    transition: box-shadow 0.3s;
+}
+
+    
+    
+.navbar form input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+    outline: none;
+}
+
+    
+.navbar a:hover {
+    color: #ffc107 !important;
+}
+
+    
+.nav-link-custom {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: #ffc107 !important;
+}
+
+.nav-link-custom::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffc107;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.nav-link-custom:hover::after {
+    width: 100%;
+}
